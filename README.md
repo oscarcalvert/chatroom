@@ -1,2 +1,2 @@
-# chatroom
-express js practice
+# Chatroom
+Discord like web application using ASP.NET Core MVC
