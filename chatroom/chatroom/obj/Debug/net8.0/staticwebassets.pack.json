@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Scripts\\site.js",
+      "PackagePath": "staticwebassets\\Scripts\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Styles\\site.css",
+      "PackagePath": "staticwebassets\\Styles\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.chatroom.props",
+      "PackagePath": "build\\chatroom.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.chatroom.props",
+      "PackagePath": "buildMultiTargeting\\chatroom.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.chatroom.props",
+      "PackagePath": "buildTransitive\\chatroom.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.chatroom.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.chatroom.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

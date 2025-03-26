@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "5sl+8nDnR1lgis6JfVy8YOLBsPEb3tYi+Z2RgfY3JiM=",
+  "Source": "chatroom",
+  "BasePath": "_content/chatroom",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "chatroom\\wwwroot",
+      "Source": "chatroom",
+      "ContentRoot": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\",
+      "BasePath": "_content/chatroom",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\favicon.ico",
+      "SourceId": "chatroom",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\",
+      "BasePath": "_content/chatroom",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Scripts\\site.js",
+      "SourceId": "chatroom",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\",
+      "BasePath": "_content/chatroom",
+      "RelativePath": "Scripts/site#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s6liyc90es",
+      "Integrity": "PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Scripts\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Styles\\site.css",
+      "SourceId": "chatroom",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\",
+      "BasePath": "_content/chatroom",
+      "RelativePath": "Styles/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tg7hbs5xwu",
+      "Integrity": "DavpJwhTWH1/wjG34njfppvOm0IjLBttjP6axLGbIio=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Styles\\site.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "favicon.61n19gt1b8.ico",
+      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:00:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:00:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "Scripts/site.js",
+      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Scripts\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:25:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8="
+        }
+      ]
+    },
+    {
+      "Route": "Scripts/site.s6liyc90es.js",
+      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Scripts\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:25:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s6liyc90es"
+        },
+        {
+          "Name": "label",
+          "Value": "Scripts/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8="
+        }
+      ]
+    },
+    {
+      "Route": "Styles/site.css",
+      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Styles\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DavpJwhTWH1/wjG34njfppvOm0IjLBttjP6axLGbIio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:25:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DavpJwhTWH1/wjG34njfppvOm0IjLBttjP6axLGbIio="
+        }
+      ]
+    },
+    {
+      "Route": "Styles/site.tg7hbs5xwu.css",
+      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Styles\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DavpJwhTWH1/wjG34njfppvOm0IjLBttjP6axLGbIio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:25:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tg7hbs5xwu"
+        },
+        {
+          "Name": "label",
+          "Value": "Styles/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DavpJwhTWH1/wjG34njfppvOm0IjLBttjP6axLGbIio="
+        }
+      ]
+    }
+  ]
+}
