@@ -1,0 +1,19 @@
+﻿@model chatroom.Models.User;
+
+    <div class="form">
+        <form asp-action="Login" asp-controller="Auth" method="post">
+            <h2>Login</h2>
+            @if (ViewBag.Error == "invalid login")
+            {
+                <span class="form_error">Username or password incorrect.</span>
+            }
+            <div class="input_group">
+                <label for="username">Username: </label><input type="text" id="username" asp-for="Username">
+            </div>
+            <div class="input_group">
+                <label for="password">Password: </label><input type="text" id="password" asp-for="PasswordHash">
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+            <p>Don't have an account? <a asp-action="Register" class="btn btn-link">Create one!</a></p>
+        </form>
+    </div>

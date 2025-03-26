@@ -1,13 +1,16 @@
 ﻿@model chatroom.Models.User;
-<form asp-controller="Auth" asp-action="Register" method="post">
-    <div>
-        <label for="username">Username: </label><input type="text" id="username" asp-for="Username">
-    </div>
-    <div>
-        <label for="password">Password: </label><input type="text" id="password" asp-for="PasswordHash">
-    </div>
-    <span asp-validation-for="UserId"></span>
-    <span asp-validation-for="Username"></span>
-    <span asp-validation-for="PasswordHash"></span>
-    <input type="submit" value="Create Account">
-</form>
+<div class="form">
+    <form asp-controller="Auth" asp-action="Register" method="post">
+        <h2>Register</h2>
+        <div class="input_group">
+            <label for="username">Username: </label><input type="text" id="username" asp-for="Username">
+            <span asp-validation-for="Username" class="form_error"></span>
+        </div>
+        <div class="input_group">
+            <label for="password">Password: </label><input type="text" id="password" asp-for="PasswordHash">
+            <span asp-validation-for="PasswordHash" class="form_error"></span>
+        </div>
+        <input type="submit" value="Create Account" class="btn btn-primary">
+        <p>Already have an account? <a asp-action="Login" class="btn btn-link">Login</a></p>
+    </form>
+</div>

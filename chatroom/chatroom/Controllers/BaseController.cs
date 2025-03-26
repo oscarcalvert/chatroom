@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using chatroom.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace chatroom.Controllers
 {
@@ -14,7 +15,13 @@ namespace chatroom.Controllers
             var uid = HttpContext.Session.GetInt32("UID");
             if (uid != null)
             {
-                dbcontext.Users.FirstOrDefault(u => u.UserId == uid);
+                var user = dbcontext.Users.FirstOrDefault(u => u.UserId == uid);
+                var chats = dbcontext.Chatrooms
+                    .Include(c => c.ChatroomMembers)
+                    .Where(c => c.ChatroomMembers.Any(cm => cm.UserId == uid))
+                    .ToList();
+                ViewBag.Chats = chats;
+                ViewBag.User = user;
             }
             base.OnActionExecuting(context);
         }

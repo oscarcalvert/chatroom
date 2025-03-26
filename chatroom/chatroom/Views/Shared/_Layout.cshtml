@@ -1,33 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - chatroom</title>
+    <link rel="stylesheet" href="~/Styles/site.css?v=@DateTime.Now.Second"/>
+    <script src="https://kit.fontawesome.com/e75dbde698.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="nav">
-        <div class="nav-left">
-            <img src="./Media/logo.png" alt="logo" class="nav-logo" />
-            <ul class="nav-links">
-                <li><a href="" class="btn btn-link">Link 1</a></li>
-                <li><a href="" class="btn btn-link">Link 2</a></li>
-                <li><a href="" class="btn btn-link">Link 3</a></li>
-                <li><a href="" class="btn btn-link">Link 4</a></li>
+<div class="side_nav_container">
+    @if (ViewBag.User != null)
+    {
+        <div class="side_nav">
+            <div class="nav-left">
+                <div class="nav_user">
+                    <p>@ViewBag.User.Username</p>
+                    <a href="/Account" class="icon icon_primary"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="/Auth/Logout" class="icon icon_danger"><i
+                            class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+            </div>
+            <ul class="nav-bottom">
+                @if (ViewBag.Chats != null)
+                {
+                    @foreach (var c in ViewBag.Chats)
+                    {
+                        <li><a href="/Chats/@c.RoomId">@c.RoomName</a></li>
+                    }
+                }
+                else
+                {
+                    <li>You have no chats :(</li>
+                }
             </ul>
         </div>
-        <div class="nav-right">
-            <a class="btn btn-primary" href="">Primary Link</a>
-            <a class="btn btn-secondary" href="">Secondary Link</a>
-        </div>
-    </header>
+    }
 
     <main>
         @RenderBody()
     </main>
 
-    <footer>
-    </footer>
-    @await RenderSectionAsync("Scripts", required: false)
+</div>
+@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

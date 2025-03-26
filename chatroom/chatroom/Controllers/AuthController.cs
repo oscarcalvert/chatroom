@@ -7,7 +7,7 @@ namespace chatroom.Controllers
     public class AuthController : BaseController
     {
         private DBContext _db = new DBContext();
-        
+
         public IActionResult Index()
         {
             return RedirectToAction("Login");
@@ -16,12 +16,41 @@ namespace chatroom.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            Console.WriteLine("Active Users: ");
+            var userList = _db.Users.ToList();
+            foreach (var u in userList)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Info:");
+                Console.WriteLine(u.Username);
+                Console.WriteLine(u.PasswordHash);
+            }
             return View();
         }
 
         [HttpPost]
-        public IActionResult Login(string username, string password)
+        public IActionResult Login(User model)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Error = "invalid login";
+                return View(model);
+            }
+
+            if (!_db.Users.Any(u => u.Username == model.Username))
+            {
+                ViewBag.Error = "invalid login";
+                return View(model);
+            }
+
+            var user = _db.Users.FirstOrDefault(u => u.Username == model.Username);
+            if (user?.PasswordHash != model.PasswordHash)
+            {
+                ViewBag.Error = "invalid login";
+                return View(model);
+            }
+            var uid = user.UserId;
+            HttpContext.Session.SetInt32("UID", uid);
             return RedirectToAction("Index", "Home");
         }
 
@@ -36,7 +65,6 @@ namespace chatroom.Controllers
         {
             if (!ModelState.IsValid)
             {
-                
                 return View(model);
             }
 
@@ -45,13 +73,31 @@ namespace chatroom.Controllers
                 ModelState.AddModelError("Username", "Username is taken");
                 return View(model);
             }
-            
+
             _db.Users.Add(model);
             _db.SaveChanges();
-            Console.WriteLine(model.Username);
-            Console.WriteLine(model.PasswordHash);
-            HttpContext.Session.SetInt32("UID",model.UserId) ;
+            HttpContext.Session.SetInt32("UID", model.UserId);
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Delete()
+        {
+            var user = _db.Users.Find(ViewBag.User.UserId);
+            if (user == null)
+            {
+                Console.WriteLine("User not to delete found");
+            }
+
+            _db.Users.Remove(user);
+            _db.SaveChanges();
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
 
         public static string HashPassword(string password)
@@ -62,10 +108,10 @@ namespace chatroom.Controllers
             // Create hash
             byte[] hash;
             using (var pbkdf2 = new Rfc2898DeriveBytes(
-                password,
-                salt,
-                iterations: 10000,
-                HashAlgorithmName.SHA256))
+                       password,
+                       salt,
+                       iterations: 10000,
+                       HashAlgorithmName.SHA256))
             {
                 hash = pbkdf2.GetBytes(20);
             }
@@ -92,10 +138,10 @@ namespace chatroom.Controllers
             // Compute hash of input password
             byte[] hash;
             using (var pbkdf2 = new Rfc2898DeriveBytes(
-                password,
-                salt,
-                iterations: 10000,
-                HashAlgorithmName.SHA256))
+                       password,
+                       salt,
+                       iterations: 10000,
+                       HashAlgorithmName.SHA256))
             {
                 hash = pbkdf2.GetBytes(20);
             }
