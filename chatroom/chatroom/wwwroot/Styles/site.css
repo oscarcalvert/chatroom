@@ -588,4 +588,11 @@ main {
     }
 }
 
+.user_chat {
+    padding: 5px;
+    width: calc(100% - 10px);
+    margin-block: 5px;
+    border: 1px solid var(--outline);
+}
+
 

@@ -20,9 +20,9 @@ namespace chatroom.Controllers
             var userList = _db.Users.ToList();
             foreach (var u in userList)
             {
-                Console.WriteLine();
-                Console.WriteLine("Info:");
+                Console.WriteLine("Username:");
                 Console.WriteLine(u.Username);
+                Console.WriteLine("Password:");
                 Console.WriteLine(u.PasswordHash);
             }
             return View();

@@ -1,5 +1,6 @@
 ﻿using chatroom.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace chatroom.Controllers;
@@ -63,7 +64,19 @@ public class ChatController : BaseController
             Console.WriteLine("Created chatroom");
             return Redirect("/Home");
         }
-
         return View(model);
+    }
+
+    public IActionResult View(int? id)
+    {
+        if (id == null)
+        {
+            Console.WriteLine("No chat provided");
+            return Redirect("/Home");
+        }
+        var chat = _db.Chatrooms.FirstOrDefault(c => c.RoomId == id);
+
+        ViewBag.Chat = chat;
+        return View();
     }
 }
