@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "58Ko2Y6qurx1SNJGglDjHQ92PY8+yONalJUU+hATWsM=",
+  "Hash": "zgfLVKQY2yJWKQER9LzcslPD6osa5JRtlm+nvt8hLGc=",
   "Source": "chatroom",
   "BasePath": "_content/chatroom",
   "Mode": "Default",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "s6liyc90es",
-      "Integrity": "PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8=",
+      "Fingerprint": "bl7c6xvl5u",
+      "Integrity": "b8t8B8ZS1sRbjzbMFqALQCqsguBAu1X5ommpbwt8I24=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Scripts\\site.js"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xo7y151px6",
-      "Integrity": "j398FbYVPtihuhXxUaNUZNutteRA/SwBcUPiHn6vPgc=",
+      "Fingerprint": "k7qylqzonl",
+      "Integrity": "0Dn4cNOLbyr72/QTsU4lKRAEtjuBCbSyDD6zbudRG3c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Styles\\site.css"
@@ -164,6 +164,51 @@
       ]
     },
     {
+      "Route": "Scripts/site.bl7c6xvl5u.js",
+      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Scripts\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b8t8B8ZS1sRbjzbMFqALQCqsguBAu1X5ommpbwt8I24=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 00:46:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bl7c6xvl5u"
+        },
+        {
+          "Name": "label",
+          "Value": "Scripts/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b8t8B8ZS1sRbjzbMFqALQCqsguBAu1X5ommpbwt8I24="
+        }
+      ]
+    },
+    {
       "Route": "Scripts/site.js",
       "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Scripts\\site.js",
       "Selectors": [],
@@ -174,7 +219,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1337"
+          "Value": "1343"
         },
         {
           "Name": "Content-Type",
@@ -182,11 +227,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8=\""
+          "Value": "\"b8t8B8ZS1sRbjzbMFqALQCqsguBAu1X5ommpbwt8I24=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 22:25:03 GMT"
+          "Value": "Thu, 27 Mar 2025 00:46:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,52 +241,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8="
-        }
-      ]
-    },
-    {
-      "Route": "Scripts/site.s6liyc90es.js",
-      "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Scripts\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1337"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 22:25:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s6liyc90es"
-        },
-        {
-          "Name": "label",
-          "Value": "Scripts/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PCLGaDYE7Cjj0ukATwbzXUxKj1sucKrKs81g3iB43j8="
+          "Value": "sha256-b8t8B8ZS1sRbjzbMFqALQCqsguBAu1X5ommpbwt8I24="
         }
       ]
     },
@@ -256,7 +256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11912"
+          "Value": "12040"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +264,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j398FbYVPtihuhXxUaNUZNutteRA/SwBcUPiHn6vPgc=\""
+          "Value": "\"0Dn4cNOLbyr72/QTsU4lKRAEtjuBCbSyDD6zbudRG3c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 22:42:55 GMT"
+          "Value": "Wed, 26 Mar 2025 23:10:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,12 +278,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j398FbYVPtihuhXxUaNUZNutteRA/SwBcUPiHn6vPgc="
+          "Value": "sha256-0Dn4cNOLbyr72/QTsU4lKRAEtjuBCbSyDD6zbudRG3c="
         }
       ]
     },
     {
-      "Route": "Styles/site.xo7y151px6.css",
+      "Route": "Styles/site.k7qylqzonl.css",
       "AssetFile": "C:\\Users\\oscar\\Documents\\git_repo\\personal projects\\chatroom\\chatroom\\chatroom\\wwwroot\\Styles\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -293,7 +293,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11912"
+          "Value": "12040"
         },
         {
           "Name": "Content-Type",
@@ -301,11 +301,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j398FbYVPtihuhXxUaNUZNutteRA/SwBcUPiHn6vPgc=\""
+          "Value": "\"0Dn4cNOLbyr72/QTsU4lKRAEtjuBCbSyDD6zbudRG3c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 22:42:55 GMT"
+          "Value": "Wed, 26 Mar 2025 23:10:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -315,7 +315,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xo7y151px6"
+          "Value": "k7qylqzonl"
         },
         {
           "Name": "label",
@@ -323,7 +323,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j398FbYVPtihuhXxUaNUZNutteRA/SwBcUPiHn6vPgc="
+          "Value": "sha256-0Dn4cNOLbyr72/QTsU4lKRAEtjuBCbSyDD6zbudRG3c="
         }
       ]
     }

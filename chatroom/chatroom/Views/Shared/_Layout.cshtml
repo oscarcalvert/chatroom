@@ -20,19 +20,23 @@
                             class="fa-solid fa-right-from-bracket"></i></a>
                 </div>
             </div>
-            <ul class="nav-bottom">
-                @if (ViewBag.Chats != null)
-                {
-                    @foreach (var c in ViewBag.Chats)
+            <div class="nav-bottom">
+                <ul>
+                    @if (ViewBag.Chats.Count != 0)
                     {
-                        <li><a href="/Chats/@c.RoomId">@c.RoomName</a></li>
+                        @foreach (var c in ViewBag.Chats)
+                        {
+                            <li><a href="/Chats/@c.RoomId">@c.RoomName</a></li>
+                        }
                     }
-                }
-                else
-                {
-                    <li>You have no chats :(</li>
-                }
-            </ul>
+                    else
+                    {
+                        <li>You have no chats :(</li>
+                    }
+                </ul>
+                <a href="/Chat/Create" class="btn btn-primary">Create Chat</a>
+            </div>
+            
         </div>
     }
 
@@ -41,6 +45,6 @@
     </main>
 
 </div>
-@await RenderSectionAsync("Scripts", required: false)
+<script src="~/Scripts/site.js"></script>
 </body>
 </html>

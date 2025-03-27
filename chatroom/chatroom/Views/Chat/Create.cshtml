@@ -1,0 +1,24 @@
+﻿@model chatroom.Models.ChatroomViewModel
+
+<div class="form">
+    <form asp-action="Create" asp-controller="Chat" method="post">
+        <h2>New Chat</h2>
+        <div class="input_group">
+            <label for="RoomName">Name: </label>
+            <input type="text" id="RoomName" asp-for="RoomName" placeholder="Room Name">
+            <span class="form_error" asp-validation-for="RoomName"></span>
+        </div>
+        <div class="input_group">
+            <label for="Desc">Description: </label>
+            <input type="text" id="Desc" asp-for="Description" placeholder="Room Description">
+            <span class="form_error" asp-validation-for="Description"></span>
+        </div>
+        <div class="input_group">
+            <label for="username">Username: </label>
+            <input type="text" id="username" asp-for="Username" placeholder="Username">
+            <span class="form_error" asp-validation-for="Username"></span>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</div>

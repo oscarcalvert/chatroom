@@ -1,6 +1,5 @@
 ﻿@model chatroom.Models.User;
-
-    <div class="form">
+    <div class="form auth_form">
         <form asp-action="Login" asp-controller="Auth" method="post">
             <h2>Login</h2>
             @if (ViewBag.Error == "invalid login")

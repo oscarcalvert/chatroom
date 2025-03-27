@@ -471,12 +471,15 @@ h1 {
 main {
     width: 100%;
 }
+
+
+
+
+
 .form {
     width: 100%;
     display: flex;
-    justify-content: center;
     height: 70vh;
-    align-items: center;
 
     form {
         margin: 10px;
@@ -518,6 +521,11 @@ main {
     }
 }
 
+.auth_form {
+    justify-content: center;
+    align-items: center;
+}
+
 .side_nav_container {
     display: flex;
     
@@ -528,6 +536,11 @@ main {
         width: 300px;
         border-inline-end: 1px solid var(--outline);
         padding: 10px;
+        
+        .btn {
+            display: block;
+            text-align: center;
+        }
     }
     
     ul {
