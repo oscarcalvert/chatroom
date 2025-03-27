@@ -44,6 +44,10 @@ public partial class DBContext : DbContext
                 .HasConstraintName("FK__Chatrooms__Creat__286302EC");
         });
 
+        modelBuilder.Entity<Message>()
+        .Property(m => m.Timestamp)
+        .HasDefaultValueSql("GETDATE()");
+
         modelBuilder.Entity<ChatroomMember>(entity =>
         {
             entity.HasKey(e => e.MembershipId).HasName("PK__Chatroom__92A7859924BDD4FD");

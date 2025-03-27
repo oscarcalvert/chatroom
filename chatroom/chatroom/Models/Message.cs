@@ -11,6 +11,8 @@ public partial class Message
 
     public int SenderId { get; set; }
 
+    public DateTime Timestamp { get; set; }
+
     public string MessageContent { get; set; } = null!;
 
     public virtual Chatroom Room { get; set; } = null!;
