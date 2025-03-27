@@ -18,6 +18,7 @@ CREATE TABLE Messages (
     RoomID INT NOT NULL,
     SenderID INT NOT NULL,
     MessageContent NVARCHAR(MAX) NOT NULL,
+    Timestamp DATETIME2(7) NOT NULL,
     FOREIGN KEY (RoomID) REFERENCES Chatrooms(RoomID),
     FOREIGN KEY (SenderID) REFERENCES Users(UserID)
 );
